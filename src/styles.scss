@@ -1,1 +1,139 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+html, body {
+  background-color: #ececec;
+  min-height: 100vh;
+  color: #585858;
+  font-family: 'Poppins';
+}
+
+body {
+  padding-bottom: 4.375rem;
+  position: relative;
+
+  @media screen and (max-width: 575px) {
+    padding-bottom: 5rem;
+  }
+}
+
+main {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,0.08), 0 0 6px rgba(0,0,0,0.08);
+  border-radius: 6px;
+  overflow: hidden;
+
+  &.container {
+    padding: 1.5rem 2rem;
+  }
+
+  @media screen and (max-width: 575px) {
+    &.container {
+      max-width: 90%;
+    }
+  }
+
+  .actions-bar {
+    button, a {
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+button, a {
+  &.btn {
+    transition: all ease-out .2s;
+
+    &.btn-default {
+      border: 1px solid rgba(0, 0, 0, 0.125);
+
+      &:hover {
+        background-color: #f1f1f1;
+      }
+
+      i {
+        margin-right: .5rem;
+      }
+    }
+
+    &.btn-success-on-hover {
+      &:hover {
+        color: #fff !important;
+        background-color: #25b525 !important;
+        border-color: #25b525 !important;
+      }
+    }
+
+    &.btn-primary-on-hover {
+      &:hover {
+        color: #fff !important;
+        background-color: #007bff !important;
+        border-color: #007bff !important;
+      }
+    }
+
+    &.btn-info-on-hover {
+      &:hover {
+        color: #fff !important;
+        background-color: #138496 !important;
+        border-color: #138496 !important;
+      }
+    }
+
+    &.btn-dark-on-hover {
+      &:hover {
+        color: #fff !important;
+        background-color: #343a40 !important;
+        border-color: #343a40 !important;
+      }
+    }
+
+    &.btn-danger-on-hover {
+      &:hover {
+        color: #fff !important;
+        background-color: #dc3545 !important;
+        border-color: #dc3545 !important;
+      }
+    }
+  }
+}
+
+form {
+  label {
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+
+  button {
+    &[type=submit] {
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        display: block;
+      }
+
+      .spinner-border {
+        position: relative;
+        top: -6px;
+      }
+    }
+  }
+}
+

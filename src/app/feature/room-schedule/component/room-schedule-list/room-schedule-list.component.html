@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div *ngIf="rooms?.length > 0; else noRoomsScheduled" class="room-card-list">
+      <app-room-schedule-list-item
+        *ngFor="let room of rooms" [room]="room"
+        (deleteRoom)="deleteRoom($event)">
+      </app-room-schedule-list-item>
+    </div>
+    <ng-template #noRoomsScheduled>
+      <p>No rooms have been scheduled yet.</p>
+    </ng-template>
+  </div>
+</div>

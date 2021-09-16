@@ -1,0 +1,71 @@
+.card {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #ff2e50;
+  }
+
+  .card-title {
+    flex-grow: 1;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 1.4rem;
+      line-height: 1.75rem;
+    }
+  }
+
+  .card-date-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    span {
+      @media screen and (max-width: 1199px) {
+        font-size: .9rem;
+      }
+
+      @media screen and (max-width: 400px) {
+        margin-bottom: .15rem;
+      }
+
+      i {
+        margin-right: .35rem;
+
+        &.fa-hourglass-start,
+        &.fa-hourglass-end {
+          @media screen and (max-width: 400px) {
+            margin-right: .46rem;
+          }
+        }
+      }
+    }
+  }
+
+  .card-actions {
+    button {
+      display: inline-block;
+      width: 33%;
+      border-radius: 0;
+      margin: 0;
+
+      i {
+        margin: 0;
+      }
+
+      @media screen and (max-width: 1199px) {
+        font-size: .9rem;
+      }
+    }
+  }
+}

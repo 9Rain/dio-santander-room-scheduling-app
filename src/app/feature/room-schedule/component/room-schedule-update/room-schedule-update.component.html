@@ -1,0 +1,30 @@
+
+<div>
+  <form class="mb-3" *ngIf="room" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control form-control-lg" id="name" required [(ngModel)]="room.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Date</label>
+      <input type="text" class="form-control form-control-lg" id="date" required [(ngModel)]="room.date" name="date">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Star time</label>
+      <input type="text" class="form-control form-control-lg" id="startHour" required [(ngModel)]="room.startHour" name="startHour">
+    </div>
+
+    <div class="form-group">
+      <label for="name">End time</label>
+      <input type="text" class="form-control form-control-lg" id="endHour" required [(ngModel)]="room.endHour" name="endHour">
+    </div>
+
+    <button [disabled]="submitted" type="submit" class="btn btn-lg btn-default btn-primary-on-hover mt-2">
+      <i [hidden]="submitted" class="fas fa-save"></i>
+      <span [hidden]="!submitted" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      Update
+    </button>
+  </form>
+</div>

@@ -1,0 +1,18 @@
+<app-layout-header></app-layout-header>
+<main class="container">
+  <section>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Edit room</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 mb-4 actions-bar">
+        <a class="btn btn-default btn-dark-on-hover mr-sm-3 mb-2 mb-sm-0" [routerLink]="['/rooms']"><i class="fas fa-arrow-left"></i>Back to list</a>
+        <a class="btn btn-default btn-info-on-hover" [routerLink]="['/rooms', this.id]"><i class="fas fa-info-circle"></i>Room details</a>
+      </div>
+    </div>
+    <app-room-schedule-update></app-room-schedule-update>
+  </section>
+</main>
+<app-layout-footer></app-layout-footer>

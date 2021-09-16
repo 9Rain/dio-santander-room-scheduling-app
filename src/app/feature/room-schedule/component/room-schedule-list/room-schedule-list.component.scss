@@ -1,0 +1,29 @@
+.room-card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  app-room-schedule-list-item {
+    width: 31%;
+    margin-bottom: 1rem;
+    margin-right: 2.3333%;
+    box-shadow: 0 0 6px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 8%);
+
+    :nth-child(3n) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 48%;
+      margin-right: 2%;
+
+      :nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title">{{room.name}}</h2>
+    <div class="card-date-info">
+      <span title="date"><i class="fas fa-clock"></i>{{room.date}}</span>
+      <span title="start hour"><i class="fas fa-hourglass-start"></i>{{room.startHour}}</span>
+      <span title="end hour"><i class="fas fa-hourglass-end"></i>{{room.endHour}}</span>
+    </div>
+    <div class="card-actions">
+      <button type="button" class="btn btn-default btn-info-on-hover" title="details" [routerLink]="['/rooms', room.id]"><i class="fas fa-info-circle"></i></button>
+      <button type="button" class="btn btn-default btn-primary-on-hover" title="edit" [routerLink]="['/rooms', room.id, 'edit']"><i class="fas fa-edit"></i></button>
+      <button type="button" class="btn btn-default btn-danger-on-hover" title="delete" (click)="deleteRoom.emit(room.id)"><i class="fas fa-trash-alt"></i></button>
+    </div>
+  </div>
+</div>
+

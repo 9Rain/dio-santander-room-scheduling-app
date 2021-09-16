@@ -1,0 +1,17 @@
+<app-layout-header></app-layout-header>
+<main class="container">
+  <section>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Rooms</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 mb-4 actions-bar">
+        <a class="btn btn-default btn-success-on-hover" [routerLink]="['/rooms', 'new']"><i class="fas fa-plus"></i>New room</a>
+      </div>
+    </div>
+    <app-room-schedule-list></app-room-schedule-list>
+  </section>
+</main>
+<app-layout-footer></app-layout-footer>
