@@ -10,7 +10,7 @@ import { Room } from '@core/model/room.model';
 })
 export class RoomService {
 
-  private baseUrl = 'http://localhost:8082/api/v1/rooms/';
+  private baseUrl = 'https://dio-santander-room-scheduling.herokuapp.com/api/v1/rooms/';
 
   constructor(private http: HttpClient) { }
 
