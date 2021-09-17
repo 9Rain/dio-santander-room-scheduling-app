@@ -9,7 +9,7 @@ A room scheduling app which consumes the [Room Scheduling API](https://github.co
 - Fully responsive layout
 - [Angular 2021 Structure Best Practices](https://javascript.plainenglish.io/how-to-structure-angular-apps-in-2021-a0bdd481ad0d)
 
-## Live
+## Live Demo
 
 This is available at [https://9rain.github.io/dio-santander-room-scheduling-app/](https://9rain.github.io/dio-santander-room-scheduling-app/)
 
